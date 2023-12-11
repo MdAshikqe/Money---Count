@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Count</title>
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/a96561de1e.js" crossorigin="anonymous"></script>
+    <!-- Tailwind add -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Coustom Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <h1 class="text-center font-bold text-7xl m-10 text-green-600">Money Count <i class="fa-solid fa-sack-dollar text-amber-400 "></i></h1>
+    <section class="container mx-auto">
+        
+        <main class="grid lg:grid-cols-2 gap-20 sm:grid-cols-1 ">
+            <div class="bg-slate-200">
+                <img class=" border-orange-700 rounded-lg pt-20 " src="img/money pic.png" alt="">
+            </div>
+            <div class="bg-slate-200">
+                <h2 class="text-center font-semibold text-5xl my-10 cursor-pointer"> Income</h2>
+                <div class="flex justify-center">
+                    <h2 class="text-3xl mx-5 self-stretch cursor-pointer">Income:</h2>
+                    <input id="totalIncome" class=" rounded-lg h-15 w-80 border-zinc-400 text-2xl" type="text">
+                   
+                </div>
+                <h1 class="text-5xl font-semibold text-center my-10 cursor-pointer">Expensive</h1>
+                <div  class="flex justify-center">
+                    <h2 class="text-3xl mx-7  cursor-pointer self-center">Food:</h2>
+                    <input id="food-input" class=" rounded-lg h-15 w-80 border-zinc-400 text-3xl mx-2" type="text">
+                   
+                </div>
+                <div  class="flex justify-center my-4">
+                    <h2 class="text-3xl mx-7 cursor-pointer self-center pr-3">Rent:</h2>
+                    <input id="rent-input" class=" rounded-lg h-15 w-80 border-zinc-400 text-3xl mx-2" type="text">
+                   
+                </div>
+                <div class="flex justify-center my-4">
+                    <h2 class="text-3xl mx-4  cursor-pointer self-center ">Clothes:</h2>
+                    <input id="cloths-input" class=" rounded-lg h-19 w-80 border-zinc-400 text-3xl" type="text">
+                   
+                </div>
+
+                <div class="flex justify-center">
+                    <button id="ExpensiveButton" class="bg-sky-500  hover:text-3xl hover:text-gray-950 my-4  h-16 font-semibold text-2xl w-40 rounded-md hover:bg-sky-700 ... ">
+                        Calculate
+                      </button>
+                </div>
+                <h1 class="text-4xl font-semibold text-center my-4 cursor-pointer">Total Expensive : <span id="expensiveTotal">0000</span></h1>
+                <h1 class="text-4xl font-semibold text-center my-4 cursor-pointer">Balance: <span id="blances">0000</span></h1>
+                <div class="flex justify-center my-10">
+                    <h1  class="text-3xl mx-4 self-center">Save:</h1>
+                    <input id="savingInput" class="text-3xl w-28 h-10 rounded-md " type="text">
+                    <h1 class="text-3xl mx-4 ">%</h1>
+                    <button id="SavaingButton" class="bg-sky-500  hover:text-3xl hover:text-gray-950  font-semibold text-2xl w-40 rounded-md hover:bg-sky-700 ... ">
+                        Save
+                      </button>
+                </div>
+                <div class="my-10">
+                    <h1  class="text-4xl font-semibold text-center my-4 cursor-pointer">Saving Ammount: <span id="savain-Amount">000</span></h1>
+                <h1 class="text-4xl font-semibold text-center my-4 cursor-pointer">Ramaining Balance: <span id="remaing-Blance">000</span></h1>
+                </div>
+
+
+
+
+            </div>
+        </main> 
+    </section>
+
+    <!-- js connected -->
+    <script src="js/math.js"></script>
+</body>
+</html>
